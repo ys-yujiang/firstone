@@ -85,6 +85,7 @@ variable "resource_group_location" {
 
 variable "storage_name" {
     description = "Storage Account Name"
+    default = "yj-test"
 }
 
 variable "master_size" {
@@ -104,14 +105,17 @@ variable "node_size" {
 
 variable "master_lb_id" {
   description = "Reference to load master loadbalancer backend address pool"
+  default = "yj-test"
 }
 
 variable "infra_lb_id" {
   description = "Reference to load master loadbalancer backend address pool"
+  default = "yj-test"
 }
 
 variable "cluster_name" {
   description = "Cluster secret"
+  default = "yj-test"
 }
 
 variable "bastion_ip" {
