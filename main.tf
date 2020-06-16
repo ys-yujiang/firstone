@@ -77,7 +77,9 @@ variable "subnet_id" {
    default = "/subscriptions/fbf7e6d4-cf46-4b1b-a1a3-17c98dd81fd8/resourceGroups/RSGNETT001/providers/Microsoft.Network/virtualNetworks/DCVNETWT001/subnets/DC_IAAS_POC"
 }
 
-variable "resource_group_name" {}
+variable "resource_group_name" {
+  default = "yj-test"
+  }
 
 variable "resource_group_location" {
   default = "westeurope"
